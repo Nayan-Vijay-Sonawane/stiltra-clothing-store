@@ -1,5 +1,5 @@
 const error = () => {
-    console
+    console.log
 }
 
 export default error;
