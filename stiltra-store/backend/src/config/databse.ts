@@ -6,5 +6,3 @@ export async function connectionDatabase(): Promise<void> {
 
     console.log("MongoDB connected Successfully");
 };
-
-
