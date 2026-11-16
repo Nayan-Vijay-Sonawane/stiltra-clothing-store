@@ -6,7 +6,12 @@
 ================================= */
 
 :root {
-  --background: #ffffff;
+  --color-background: #F8F7F4;
+  --color-primary: #111111;
+  --color-secondary: #6B6B6B;
+  --color-accent: #8B7355;
+  --color-white: #FFFFFF;
+  --color-border: #E8E5DF;
   --foreground: #171717;
 }
 
