@@ -19,6 +19,23 @@
   --font-body: var(--font-dm-sans), sans-serif;
   --font-heading: var(--font-cormorant), serif;
 
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 48px;
+  --spacing-3xl: 64px;
+
+  /* Layout */
+  --container-width: 1440px;
+
+  /* Border-radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+
 }
 
 @theme inline {
