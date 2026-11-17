@@ -21,7 +21,7 @@ export default function Badge({
             "bg-[var(--color-accent)] text-white",
 
         success:
-            "bg-green-100 text-green-100",
+            "bg-green-200 text-green-700",
     };
 
     return (
