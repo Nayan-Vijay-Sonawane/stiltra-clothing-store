@@ -127,7 +127,7 @@ export default function Footer() {
                             Discover new arrivals, collection and updates.
                         </p>
 
-                        <form className="space-y-3">
+                        <div className="space-y-3">
 
                             <Input 
                                 id="newsletter-email"
@@ -145,7 +145,7 @@ export default function Footer() {
                                 <ArrowRight size={16} className="ml-2" />
                             </Button>
 
-                        </form>
+                        </div>
 
                         <p className="text-xs text-[var(--color-secondary)]">
                             Newsletter subscription will be connected in the future milestone.
