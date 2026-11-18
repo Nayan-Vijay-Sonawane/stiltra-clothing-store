@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { Instagram, Facebook, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import Container from "@/components/ui/Container";
 import Input from "@/components/ui/Input";
 import Button from "@/components/ui/Button";
@@ -41,8 +41,9 @@ export default function Footer() {
                                 target="_blank"
                                 rel="noreferrer"
                                 aria-label="Instagram"
+                                className="text-sm font-semibold"
                             >
-                                <Instagram size={19} />
+                                I
                             </a>
 
                             <a
@@ -50,8 +51,9 @@ export default function Footer() {
                                 target="_blank"
                                 rel="noreferrer"
                                 aria-label="Facebook"
+                                className="text-sm font-semibold"
                             >
-                                <Facebook size={19} />
+                                f
                             </a>
 
                         </div>
