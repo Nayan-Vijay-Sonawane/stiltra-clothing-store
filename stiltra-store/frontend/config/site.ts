@@ -28,4 +28,32 @@ export const siteConfig = {
             href: "/category/everyday-essentials"
         },
     ],
+
+    footerLinks: {
+        customerCare : [
+            {
+                label: "Contact US",
+                href: "/contact"
+            },
+            {
+                label: "Shipping",
+                href: "/policies/shipping"
+            },
+            {
+                label: "Returns",
+                href: "/policies/returns"
+            }
+        ],
+
+        information: [
+            {
+                label: "About Us",
+                href: "/about"
+            },
+            {
+                label: "Privacy Policy",
+                href: "/policies/privacy"
+            }
+        ],
+    },
 };

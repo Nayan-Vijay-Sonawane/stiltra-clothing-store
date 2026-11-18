@@ -140,7 +140,7 @@ export default function DesignPreview() {
 
                             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4">
 
-                                <div className="h-2o rounded-md bg-[#F8F7F4]">
+                                <div className="w-full rounded-md border border-[var(--color-border)] bg-[#F8F7F4]">
                                     <p className="mt-2 text-xs">Warm Ivory</p>
                                 </div>
 
