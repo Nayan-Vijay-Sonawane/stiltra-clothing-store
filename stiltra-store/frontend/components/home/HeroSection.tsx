@@ -45,6 +45,29 @@ export default function HeroSection() {
                             comfort, confidence and expression.
                         </p>
 
+                        <div className='mt-8 flex flex-wrap justify-center gap-3'>
+
+                            <Button
+                                variant='primary'
+                                size='lg'
+                                className='bg-white text-[#111111] hover:bg-[#E8E5DF]'
+                                onClick={() => {
+                                    window.location.href = "/men"
+                                }}
+                            >
+                                SHOP MEN
+                            </Button>
+
+                            <Link href='/women'>
+                            
+                                <span className='inline-flex items-center justify-center border border-white px-8 py-4 text-sm font-medium text-white transition-colors hover:bg-white hover:text-[#111111]'>
+                                    SHOP WOMEN
+                                </span>
+                                
+                            </Link>
+
+                        </div>
+
                     </div>
                     
                     </div>
