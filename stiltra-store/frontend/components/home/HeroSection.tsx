@@ -47,7 +47,7 @@ export default function HeroSection() {
 
                         <div className='mt-8 flex flex-wrap justify-center gap-3'>
 
-                            <Button
+                            {/* <Button
                                 variant='primary'
                                 size='lg'
                                 className='bg-white text-[#111111] hover:bg-[#E8E5DF]'
@@ -56,7 +56,12 @@ export default function HeroSection() {
                                 }}
                             >
                                 SHOP MEN
-                            </Button>
+                            </Button> */}
+                            <Link href='/men'>
+                                <Button size='lg'>
+                                    SHOP MEN
+                                </Button>
+                            </Link>
 
                             <Link href='/women'>
                             
@@ -78,5 +83,5 @@ export default function HeroSection() {
 
         </section>
 
-    )
+    );
 }
