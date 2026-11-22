@@ -4,19 +4,19 @@ import Link from "next/link";
 import Container from "@/components/ui/Container";
 
 const collections = [
-        {
-            title: "Everyday Essentials",
-            description: "The pieces you'll reach for every day.",
-            image: "/images/home/collection-1.jpg",
-            href: "/category/everyday-essentials",
-        },
-        {
-            title: "Modern Classics",
-            description: "Timeless styles. Contemporary expression.",
-            image: "/images/home/collection-2.jpg",
-            href: "/category/modern-classics",
-        },
-    ];
+  {
+    title: "Everyday Essentials",
+    description: "The pieces you'll reach for every day.",
+    image: "/images/collection-1.jpg",
+    href: "/category/everyday-essentials",
+  },
+  {
+    title: "Modern Classics",
+    description: "Timeless styles. Contemporary expression.",
+    image: "/images/collection-2.png",
+    href: "/category/modern-classics",
+  },
+];
 
 export default function FeaturedCollections() {
   return (
