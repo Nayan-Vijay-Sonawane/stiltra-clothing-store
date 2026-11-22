@@ -69,6 +69,74 @@ export default function NewArrivals() {
 
                 </div>
 
+                {/* Product Grid */}
+
+                <div className='grid grid-cols-2 gap-x-4 gap-y-8 md:grid-cols-4 md:gap-6'>
+
+                    {products.map((product) => (
+                        
+                        <Link
+                            key={product.id}
+                            href={`/products/${product.slug}`}
+                            className='group'
+                        >
+
+                            {/* Product Image */}
+
+                            <div className='relative aspect-[3/4] overflow:hidden bg-[#E8E5DF]'>
+                            
+                                <Image
+                                    src={product.image}
+                                    alt={product.name}
+                                    fill
+                                    sizes='(max-width: 768px) 50vw, 25vw'
+                                    className='object-cover transition-transform duration-500 group-hover:scale-105'
+                                />
+
+                                <div className='absolute left-2 top-2 sm:left-3 sm:top-3'>
+                                    <Badge variant='new'>
+                                        {product.label}
+                                    </Badge>
+                                </div>
+                            
+                            </div>
+
+                            {/* Product Details */}
+
+                            <div className='mt-3 space-y-1'>
+
+                                <p className='text-xs text-[#6B6B6B]'>
+                                    {product.category}
+                                </p>
+
+                                <h3 className='text-sm font-medium'>
+                                    {product.name}
+                                </h3>
+
+                                <p className='text-sm font-semibold'>
+                                    ₹{product.price.toLocaleString("en-IN")}
+                                </p>
+
+                            </div>
+
+                        </Link>
+                    ))}
+
+                </div>
+
+                {/* View All */}
+
+                <div className='mt-12 text-center'>
+
+                    <Link
+                        href="/category/new-arrivals"
+                        className='inline-flex border border-[#111111] px-8 py-4 text-xs font-semibold -tracking-widest transition-colors hover:bg-[#111111] hover:text-white'
+                    >
+                        VIEW ALL PRODUCTS
+                    </Link>
+
+                </div>
+
             </Container>
 
         </section>
