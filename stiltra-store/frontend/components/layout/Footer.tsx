@@ -1,179 +1,180 @@
 import Link from "next/link";
 
 import { ArrowRight } from "lucide-react";
+
 import Container from "@/components/ui/Container";
 import Input from "@/components/ui/Input";
 import Button from "@/components/ui/Button";
+
 import { siteConfig } from "@/config/site";
 
 export default function Footer() {
-    return (
+  return (
+    <footer className="border-t border-[var(--color-border)] bg-white">
 
-        <footer className="border-t border-[var(--color-border)] bg-white">
+      <Container>
 
-            <Container>
+        <div className="grid grid-cols-1 gap-10 py-14 sm:grid-cols-2 lg:grid-cols-4">
 
-                <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
+          {/* Brand Information */}
 
-                    {/* Brand Information */}
+          <div className="space-y-4">
 
-                    <div className="space-y-4">
+            <Link
+              href="/"
+              className="text-2xl font-semibold tracking-[0.12em]"
+            >
+              {siteConfig.name}
+            </Link>
 
-                        <Link
-                            href="/"
-                            className="text-2xl font-semibold tracking-[0.12em]"
-                        >
-                            {siteConfig.name}
-                        </Link>
+            <p className="text-xs font-medium tracking-widest text-[var(--color-accent)]">
+              {siteConfig.descriptor}
+            </p>
 
-                        <p className="text-xs font-medium tracking-widest text-[var(--color-accent)]">
-                            {siteConfig.descriptor}
-                        </p>
+            <p className="max-w-xs text-sm leading-6 text-[var(--color-secondary)]">
+              {siteConfig.description}
+            </p>
 
-                        <p className="max-w-xs text-xs leading-6 text-[var(--color-secondary)]">
-                            {siteConfig.description}
-                        </p>
+            <div className="flex items-center gap-4">
 
-                        <div className="flex items-center gap-4">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Instagram"
+                className="text-sm font-semibold"
+              >
+                I
+              </a>
 
-                            <a 
-                                href="https://www.instagram.com/"
-                                target="_blank"
-                                rel="noreferrer"
-                                aria-label="Instagram"
-                                className="text-sm font-semibold"
-                            >
-                                I
-                            </a>
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Facebook"
+                className="text-sm font-semibold"
+              >
+                F
+              </a>
 
-                            <a
-                                href="https://www.facebook.com/"
-                                target="_blank"
-                                rel="noreferrer"
-                                aria-label="Facebook"
-                                className="text-sm font-semibold"
-                            >
-                                f
-                            </a>
+            </div>
 
-                        </div>
+          </div>
 
-                    </div>
+          {/* Customer Care */}
 
-                    {/* Customer Care */}
+          <div>
 
-                    <div>
+            <h3 className="mb-5 text-sm font-semibold">
+              CUSTOMER CARE
+            </h3>
 
-                        <h3 className="mb-5 text-sm font-semibold">
-                            CUSTOMER CARE
-                        </h3>
+            <ul className="space-y-4">
 
-                        <ul className="space-y-4">
+              {siteConfig.footerLinks.customerCare.map((item) => (
 
-                        {siteConfig.footerLinks.customerCare.map((item) => (
+                <li key={item.label}>
 
-                            <li key={item.label}>
-                                
-                            <Link
-                                href={item.href}
-                                className="text-sm text-[var(--color-secondary)] hover:text-[var(--color-primary)]"
-                            >
-                                {item.label}
-                            </Link>
+                  <Link
+                    href={item.href}
+                    className="text-sm text-[var(--color-secondary)] hover:text-[var(--color-primary)]"
+                  >
+                    {item.label}
+                  </Link>
 
-                            </li>
+                </li>
 
-                        ))}
+              ))}
 
-                        </ul>
+            </ul>
 
-                    </div>
+          </div>
 
-                    {/* Information */}
+          {/* Information */}
 
-                    <div>
+          <div>
 
-                        <h3 className="mg-5 text-sm font-semibold">
-                            INFORMATION
-                        </h3>
+            <h3 className="mb-5 text-sm font-semibold">
+              INFORMATION
+            </h3>
 
-                        <ul className="space-y-4">
+            <ul className="space-y-4">
 
-                            {siteConfig.footerLinks.information.map((item) => (
+              {siteConfig.footerLinks.information.map((item) => (
 
-                                <li key={item.label}>
+                <li key={item.label}>
 
-                                    <Link
-                                        href={item.href}
-                                        className="text-sm text-[var(--color-secondary)] hover:text-[var(--color-primary)]"
-                                    >
-                                        {item.label}
-                                    </Link>
-                                </li>
+                  <Link
+                    href={item.href}
+                    className="text-sm text-[var(--color-secondary)] hover:text-[var(--color-primary)]"
+                  >
+                    {item.label}
+                  </Link>
 
-                            ))}
+                </li>
 
-                        </ul>
+              ))}
 
-                    </div>
+            </ul>
 
-                    {/* Newsletter */}
+          </div>
 
-                    <div className="space-y-4">
+          {/* Newsletter */}
 
-                        <h3 className="text-sm font-semibold">
-                            JOIN THE STILTRA COMMUNITY
-                        </h3>
+          <div className="space-y-4">
 
-                        <p className="text-sm leading-6 text-[var(--color-secondary)]">
-                            Discover new arrivals, collection and updates.
-                        </p>
+            <h3 className="text-sm font-semibold">
+              JOIN THE STILTRA COMMUNITY
+            </h3>
 
-                        <div className="space-y-3">
+            <p className="text-sm leading-6 text-[var(--color-secondary)]">
+              Discover new arrivals, collections and updates.
+            </p>
 
-                            <Input 
-                                id="newsletter-email"
-                                type="email"
-                                placeholder="Enter your email"
-                                aria-label="Newsletter email address"
-                            />
+            <form className="space-y-3">
 
-                            <Button
-                                type="submit"
-                                size="md"
-                                className="w-full"
-                            >
-                                SUBSCRIBE
-                                <ArrowRight size={16} className="ml-2" />
-                            </Button>
+              <Input
+                id="newsletter-email"
+                type="email"
+                placeholder="Enter your email"
+                aria-label="Newsletter email address"
+              />
 
-                        </div>
+              <Button
+                type="submit"
+                size="md"
+                className="w-full"
+              >
+                SUBSCRIBE
+                <ArrowRight size={16} className="ml-2" />
+              </Button>
 
-                        <p className="text-xs text-[var(--color-secondary)]">
-                            Newsletter subscription will be connected in the future milestone.
-                        </p>
+            </form>
 
-                    </div>
+            <p className="text-xs text-[var(--color-secondary)]">
+              Newsletter subscription will be connected in a future milestone.
+            </p>
 
-                </div>
+          </div>
 
-                {/* Bottom Footer */}
+        </div>
 
-                <div className="flex flex-col items-center justify-between gap-4 border-t border-[var(--color-border)] py-6 text-center sm:flex-row">
+        {/* Bottom Footer */}
 
-                    <p className="text-xs text-[var(--color-secondary)]">
-                        @ {new Date().getFullYear()} STILTRA. All rights reserved.
-                    </p>
+        <div className="flex flex-col items-center justify-between gap-4 border-t border-[var(--color-border)] py-6 text-center sm:flex-row">
 
-                    <p className="text-xs tracking-wide text-[var(--color-secondary)]">
-                        STYLE IN EVERY FORM
-                    </p>
+          <p className="text-xs text-[var(--color-secondary)]">
+            © {new Date().getFullYear()} STILTRA. All rights reserved.
+          </p>
 
-                </div>
+          <p className="text-xs tracking-wide text-[var(--color-secondary)]">
+            STYLE IN EVERY FORM.
+          </p>
 
-            </Container>
+        </div>
 
-        </footer>
+      </Container>
 
-    );
+    </footer>
+  );
 }
