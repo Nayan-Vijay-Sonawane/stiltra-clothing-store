@@ -143,10 +143,10 @@ export default function Footer() {
               <Button
                 type="submit"
                 size="md"
-                className="w-full"
+                className="relative flex gap-5 w-full items-center justify-center px-6 py-5 bg-[var(--color-primary)] text-white hover:bg-[var(--color-accent)] transition-colors duration-300"
               >
                 SUBSCRIBE
-                <ArrowRight size={16} className="ml-2" />
+                <ArrowRight size={18} className="ml-2" />
               </Button>
 
             </form>

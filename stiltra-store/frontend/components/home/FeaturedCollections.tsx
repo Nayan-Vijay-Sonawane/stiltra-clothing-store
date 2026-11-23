@@ -7,7 +7,7 @@ const collections = [
   {
     title: "Everyday Essentials",
     description: "The pieces you'll reach for every day.",
-    image: "/images/collection-1.jpg",
+    image: "/images/collection-1.png",
     href: "/category/everyday-essentials",
   },
   {
@@ -57,7 +57,7 @@ export default function FeaturedCollections() {
               className="group"
             >
 
-              <div className="relative h-[350px] overflow-hidden bg-[#F8F7F4] sm:h-[450px]">
+              <div className="relative aspect-[4/3] overflow-hidden bg-[#F8F7F4] sm:h-[450px]">
 
                 <Image
                   src={collection.image}
@@ -69,7 +69,7 @@ export default function FeaturedCollections() {
 
               </div>
 
-              <div className="mt-5">
+              <div className="flex flex-1 flex-col pt-5">
 
                 <h3 className="text-lg font-medium">
                   {collection.title}
