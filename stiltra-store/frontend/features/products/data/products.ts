@@ -8,8 +8,9 @@ export const products: Product[] = [
         category: "T-Shirts",
         audience: "men",
         price: 799,
-        image: "/images/products/men-tshirt.png",
+        image: "/images/products/mens-tshirt.png",
         isNew: true,
+        loading: "eager",
     },
     {
         id: "2",
@@ -18,7 +19,8 @@ export const products: Product[] = [
         category: "Hoodies",
         audience: "men",
         price: 1499,
-        image: "/images/products/men-hoodie.png",
+        image: "/images/products/mens-hoodie.png",
+        loading: "lazy"
     },
     {
         id: "3",
@@ -27,7 +29,7 @@ export const products: Product[] = [
         category: "Trousers",
         audience: "men",
         price: 1199,
-        image: "/images/products/men-trousers.png",
+        image: "/images/products/mens-trousers.png",
     },
     {
         id: "4",
@@ -36,7 +38,7 @@ export const products: Product[] = [
         category: "T-Shirts",
         audience: "women",
         price: 899,
-        image: "/images/products/women-top.png",
+        image: "/images/products/womens-top.png",
         isNew: true,
     },
     {
@@ -46,7 +48,7 @@ export const products: Product[] = [
         category: "Trousers",
         audience: "women",
         price: 1199,
-        image: "/images/products/women-trousers.png",
+        image: "/images/products/womens-trousers.png",
     },
     {
         id: "6",
@@ -55,7 +57,7 @@ export const products: Product[] = [
         category: "Shirts",
         audience: "women",
         price: 1099,
-        image: "/images/products/women-shirt.png",
+        image: "/images/products/womens-shirt.png",
         isNew: true,
     },
     {
@@ -66,7 +68,7 @@ export const products: Product[] = [
         audience: "men",
         price: 699,
         originalPrice: 899,
-        image: "/images/products/men-basic.png",
+        image: "/images/products/mens-basic.png",
     },
     {
         id: "8",
@@ -75,7 +77,7 @@ export const products: Product[] = [
         category: "Hoodies",
         audience: "women",
         price: 1399,
-        image: "/images/products/women-hoodie.png",
+        image: "/images/products/womens-hoodie.png",
         isNew: true,
     },
 ];

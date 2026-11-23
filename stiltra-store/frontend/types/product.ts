@@ -8,4 +8,5 @@ export interface Product {
   originalPrice?: number;
   image: string;
   isNew?: boolean;
+  loading?: "eager" | "lazy";
 }
