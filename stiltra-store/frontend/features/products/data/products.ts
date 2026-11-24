@@ -20,7 +20,7 @@ export const products: Product[] = [
         audience: "men",
         price: 1499,
         image: "/images/products/mens-hoodie.png",
-        loading: "lazy"
+        loading: "lazy",
     },
     {
         id: "3",
@@ -30,6 +30,7 @@ export const products: Product[] = [
         audience: "men",
         price: 1199,
         image: "/images/products/mens-trousers.png",
+        loading: "eager",
     },
     {
         id: "4",
@@ -40,6 +41,7 @@ export const products: Product[] = [
         price: 899,
         image: "/images/products/womens-top.png",
         isNew: true,
+        loading: "eager",
     },
     {
         id: "5",
@@ -49,6 +51,7 @@ export const products: Product[] = [
         audience: "women",
         price: 1199,
         image: "/images/products/womens-trousers.png",
+        loading: "eager",
     },
     {
         id: "6",
@@ -59,6 +62,7 @@ export const products: Product[] = [
         price: 1099,
         image: "/images/products/womens-shirt.png",
         isNew: true,
+        loading: "eager",
     },
     {
         id: "7",
@@ -69,6 +73,7 @@ export const products: Product[] = [
         price: 699,
         originalPrice: 899,
         image: "/images/products/mens-basic.png",
+        loading: "eager",
     },
     {
         id: "8",
@@ -79,5 +84,6 @@ export const products: Product[] = [
         price: 1399,
         image: "/images/products/womens-hoodie.png",
         isNew: true,
+        loading: "eager",
     },
 ];
