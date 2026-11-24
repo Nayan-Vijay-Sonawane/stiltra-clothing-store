@@ -9,7 +9,7 @@ import { siteConfig } from '@/config/site';
 export default function Navbar() {
     return (
 
-        <header className='sticky top-0 z-50 bg-[var-(--color-background)]'>
+        <header className='sticky top-0 z-50 border-b border-black/10 bg-[#F8F7F4]'>
 
         {/* Announcement Bar */}
 
@@ -42,7 +42,7 @@ export default function Navbar() {
 
                 {/* Desktop Navigation */}
 
-                <nav className='hidden items-center gap-8 lg:flex'>
+                <nav className='hidden items-center gap-10 md:flex'>
 
                     {siteConfig.navigation.map((item) => (
                         <Link
@@ -58,7 +58,7 @@ export default function Navbar() {
 
                 {/* Navigation Actions */}
 
-                <div className='flex items-center gap-4'>
+                <div className='flex items-center gap-7'>
 
                     <Link
                         href='/search'

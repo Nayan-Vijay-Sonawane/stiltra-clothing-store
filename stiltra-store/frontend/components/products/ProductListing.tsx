@@ -123,7 +123,7 @@ export default function ProductListing ({
                 {/* Product grid */}
 
                 {filterProducts.length > 0 ? (
-                    <div className='grid grid-cols-2 gap-x-4 gap-y-10 sm:grid-cols-3 lg:grid-cols-4 lg:gap-x-6'>
+                    <div className='grid grid-cols-2 gap-x-3 gap-y-8 sm:gap-x-5 sm:gap-y-10 sm:grid-cols-3 lg:grid-cols-4 lg:gap-x-6'>
 
                         {filterProducts.map((product) => (
                             <ProductCard
