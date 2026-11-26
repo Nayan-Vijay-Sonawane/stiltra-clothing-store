@@ -33,6 +33,23 @@ export default function ProductGallery ({
                 />
 
                 {/* Thumbnail Images */}
+                {images.length > 1 && (
+                    <div className='grid grid-cols-4 gap-3'>
+                        {images.map((image, index) => (
+                            <button
+                                key={`${image}-{index}`}
+                                onClick={() => setActiveImage(index)}
+                                className={`relative aspect-[4/5] overflow-hidden border ${
+                                    activeimage === index
+                                    ? "border-black"
+                                    : "border-transparent"
+                                }`}
+                                aria-label={`View product image ${index+1}`}
+                                aria-pressed={activeimage === index}
+                            ></button>
+                        ))}
+                    </div>
+                )}
             
             </div>
 
