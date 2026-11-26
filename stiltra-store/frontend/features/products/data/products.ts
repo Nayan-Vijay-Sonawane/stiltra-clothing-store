@@ -35,8 +35,8 @@ export const products: Product[] = [
       "A relaxed-fit hoodie that combines everyday comfort with contemporary streetwear style. Designed with a comfortable silhouette, making it an ideal choice for casual outings and everyday layering.",
     images: [
       "/images/products/mens-hoodie.png",
-      "/images/products/mens-hoodie-back.jpg",
-      "/images/products/mens-hoodie-detail.jpg",
+      "/images/products/mens-hoodie-back.png",
+      "/images/products/mens-hoodie-detail.png",
     ],
     sizes: ["S", "M", "L", "XL"],
     colors: ["Black", "Grey", "Beige"],
@@ -55,8 +55,8 @@ export const products: Product[] = [
       "Modern relaxed-fit trousers designed for a clean and effortless everyday look. Their versatile silhouette makes them easy to style with T-shirts, shirts, and casual footwear.",
     images: [
       "/images/products/mens-trousers.png",
-      "/images/products/mens-trousers-back.jpg",
-      "/images/products/mens-trousers-detail.jpg",
+      "/images/products/mens-trousers-back.png",
+      "/images/products/mens-trousers-detail.png",
     ],
     sizes: ["S", "M", "L", "XL"],
     colors: ["Black", "Olive", "Beige"],
@@ -74,8 +74,8 @@ export const products: Product[] = [
       "A versatile relaxed-fit top designed for effortless everyday styling. Its comfortable silhouette and minimal design make it a wardrobe essential for casual and contemporary outfits.",
     images: [
       "/images/products/womens-top.png",
-      "/images/products/womens-top-back.jpg",
-      "/images/products/womens-top-detail.jpg",
+      "/images/products/womens-top-back.png",
+      "/images/products/womens-top-detail.png",
     ],
     sizes: ["XS", "S", "M", "L", "XL"],
     colors: ["White", "Black", "Beige"],
@@ -94,8 +94,7 @@ export const products: Product[] = [
       "Minimal everyday trousers featuring a relaxed silhouette and versatile styling. Designed to complement both casual and elevated looks while keeping comfort at the centre.",
     images: [
       "/images/products/womens-trousers.png",
-      "/images/products/womens-trousers-back.jpg",
-      "/images/products/womens-trousers-detail.jpg",
+      "/images/products/womens-trousers-back.png",
     ],
     sizes: ["XS", "S", "M", "L", "XL"],
     colors: ["Black", "Brown", "Beige"],
@@ -113,8 +112,8 @@ export const products: Product[] = [
       "A timeless everyday shirt with a clean silhouette and contemporary appeal. Easy to pair with trousers, denim, or skirts for a refined yet relaxed outfit.",
     images: [
       "/images/products/womens-shirt.png",
-      "/images/products/womens-shirt-back.jpg",
-      "/images/products/womens-shirt-detail.jpg",
+      "/images/products/womens-shirt-back.png",
+      "/images/products/womens-shirt-detail.png",
     ],
     sizes: ["XS", "S", "M", "L", "XL"],
     colors: ["White", "Blue", "Beige"],
