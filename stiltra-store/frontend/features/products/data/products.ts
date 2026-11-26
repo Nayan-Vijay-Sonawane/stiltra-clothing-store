@@ -9,6 +9,8 @@ export const products: Product[] = [
         audience: "men",
         price: 799,
         image: "/images/products/mens-tshirt.png",
+        description: "A contemporary oversized T-shirt designed for everday comfort and effortless syling.",
+        size: ["S", "M", "L", "XL"],
         isNew: true,
         loading: "eager",
     },
