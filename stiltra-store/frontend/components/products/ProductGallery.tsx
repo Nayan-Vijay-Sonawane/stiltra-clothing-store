@@ -31,6 +31,7 @@ export default function ProductGallery ({
                     sizes='{max-width:768px} 100vw, 50vw'
                     className='object-cover'
                 />
+                </div>
 
                 {/* Thumbnail Images */}
                 {images.length > 1 && (
@@ -46,15 +47,22 @@ export default function ProductGallery ({
                                 }`}
                                 aria-label={`View product image ${index+1}`}
                                 aria-pressed={activeimage === index}
-                            ></button>
+                            >
+
+                                <Image 
+                                    src={image}
+                                    alt={`${name} view ${index+1}`}
+                                    fill
+                                    sizes='120px'
+                                    className='object-cover'
+                                />
+                            </button>
                         ))}
                     </div>
                 )}
             
             </div>
 
-        </div>
-
-    )
+    );
 
 }
