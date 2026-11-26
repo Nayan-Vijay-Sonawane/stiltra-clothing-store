@@ -2,7 +2,7 @@
 import type { Product } from "@/types/product";
 
 export const products: Product[] = [
-<<<<<<< HEAD
+
   {
     id: "men-001",
     slug: "essential-oversized-tshirt",
@@ -162,93 +162,3 @@ export const products: Product[] = [
     loading: "eager",
   },
 ];
-=======
-    {
-        id: "1",
-        slug: "essential-oversized-tshirt",
-        name: "Essential Oversized T-Shirt",
-        category: "T-Shirts",
-        audience: "men",
-        price: 799,
-        image: "/images/products/mens-tshirt.png",
-        description: "A contemporary oversized T-shirt designed for everday comfort and effortless syling.",
-        size: ["S", "M", "L", "XL"],
-        isNew: true,
-        loading: "eager",
-    },
-    {
-        id: "2",
-        slug: "classic-streetwear-hoodie",
-        name: "Classic Streetwear Hoodie",
-        category: "Hoodies",
-        audience: "men",
-        price: 1499,
-        image: "/images/products/mens-hoodie.png",
-        loading: "lazy",
-    },
-    {
-        id: "3",
-        slug: "relaxed-fit-trousers",
-        name: "Relaxed Fit Trousers",
-        category: "Trousers",
-        audience: "men",
-        price: 1199,
-        image: "/images/products/mens-trousers.png",
-        loading: "eager",
-    },
-    {
-        id: "4",
-        slug: "everyday-relaxed-top",
-        name: "Everyday Relaxed Top",
-        category: "T-Shirts",
-        audience: "women",
-        price: 899,
-        image: "/images/products/womens-top.png",
-        isNew: true,
-        loading: "eager",
-    },
-    {
-        id: "5",
-        slug: "minimal-everyday-trousers",
-        name: "Minimal Everyday Trousers",
-        category: "Trousers",
-        audience: "women",
-        price: 1199,
-        image: "/images/products/womens-trousers.png",
-        loading: "eager",
-    },
-    {
-        id: "6",
-        slug: "classic-womens-shirt",
-        name: "Classic Everyday Shirt",
-        category: "Shirts",
-        audience: "women",
-        price: 1099,
-        image: "/images/products/womens-shirt.png",
-        isNew: true,
-        loading: "eager",
-    },
-    {
-        id: "7",
-        slug: "premium-basic-tshirt",
-        name: "Premium Basic T-Shirt",
-        category: "T-Shirts",
-        audience: "men",
-        price: 699,
-        originalPrice: 899,
-        image: "/images/products/mens-basic.png",
-        loading: "eager",
-    },
-    {
-        id: "8",
-        slug: "relaxed-womens-hoodie",
-        name: "Relaxed Women's Hoodie",
-        category: "Hoodies",
-        audience: "women",
-        price: 1399,
-        image: "/images/products/womens-hoodie.png",
-        isNew: true,
-        loading: "eager",
-    },
-];
->>>>>>> febf00eea8958a1c1fec1a01c32ee9b4b58a5050
