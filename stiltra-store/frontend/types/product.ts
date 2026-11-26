@@ -5,8 +5,13 @@ export interface Product {
   category: string;
   audience: "men" | "women";
   price: number;
-  originalPrice?: number;
   image: string;
+  description: string;
+
+  images?: string[];
+  size?: string[];
+  colors?: string[];
+  originalPrice?: number;
   isNew?: boolean;
   loading?: "eager" | "lazy";
 }

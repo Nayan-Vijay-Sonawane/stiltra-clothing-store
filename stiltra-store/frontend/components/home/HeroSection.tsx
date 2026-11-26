@@ -15,7 +15,7 @@ export default function HeroSection() {
           {/* Hero Image */}
 
           <Image
-            src="/images/hero.png"
+            src="/images/Hero.png"
             alt="STILTRA contemporary everyday fashion collection"
             fill
             priority
