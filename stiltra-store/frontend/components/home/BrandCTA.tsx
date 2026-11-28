@@ -19,7 +19,7 @@ export default function BrandCTA() {
 
       <Link
         href="/men"
-        className="mt-8 inline-flex px-9 py-4 text-xs font-semibold tracking-widest bg-[#111111] text-[var(--color-white)] transition-colors hover:bg-[#333333]"
+        className="mt-8 inline-flex px-9 py-4 text-xs font-semibold tracking-widest bg-[#111111] !text-white transition-colors hover:bg-[#333333]"
         
       >
         EXPLORE STILTRA

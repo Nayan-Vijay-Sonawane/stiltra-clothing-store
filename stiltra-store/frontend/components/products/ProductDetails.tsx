@@ -46,7 +46,7 @@ export default function ProductDetails({
                   ₹{product.originalPrice.toLocaleString("en-IN")}
                 </p>
 
-                <span className="text-xs text-[#8f775d]">
+                <span className="text-xs text-[#8F775D]">
                   {Math.round(
                     ((product.originalPrice - product.price) /
                       product.originalPrice) *

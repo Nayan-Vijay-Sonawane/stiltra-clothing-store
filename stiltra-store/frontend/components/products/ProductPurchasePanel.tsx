@@ -9,12 +9,14 @@ interface PurchasePanelProps {
     price: number;
     sizes?: string[];
     colors?: string[];
+    image: string;
   };
 }
 
 export default function ProductPurchasePanel({
   product,
 }: PurchasePanelProps) {
+
   const sizes = product.sizes ?? [];
   const colors = product.colors ?? [];
 
@@ -43,6 +45,7 @@ export default function ProductPurchasePanel({
       size: selectedSize,
       color: selectedColor,
       quantity,
+      image: product.image,
     };
 
     // Temporary MVP cart persistence.

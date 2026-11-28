@@ -55,7 +55,7 @@ export default function CartSummary({
             
             <Link
                 href="/checkout"
-                className='flex w-full items-center justify-center bg-[#111111] px-6 py-4 text-xs font-medium uppercase tracking-widest text-white transition hover:bg-[#383838]'
+                className='flex w-full items-center justify-center bg-[#111111] px-6 py-4 text-xs font-medium uppercase tracking-widest !text-white transition hover:bg-[#383838]'
             >
                 Proceed to Checkout
             </Link>

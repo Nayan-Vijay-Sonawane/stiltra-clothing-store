@@ -11,7 +11,7 @@ import CartSummary from "./CartSummary";
 import { getCartItems, getCartSubtotal, saveCartItems,} from "@/lib/cart";
 
 export default function CartPageClient() {
-    
+
   const [cartItems, setCartItems] = useState<CartItemType[]>([]);
   const [isLoaded, setIsLoaded] = useState(false);
 
@@ -120,7 +120,7 @@ export default function CartPageClient() {
 
         <Link
           href="/men"
-          className="mt-9 bg-[#111111] px-10 py-4 text-xs font-medium uppercase tracking-widest text-white transition hover:bg-[#383838]"
+          className="mt-9 bg-[#111111] px-10 py-4 text-xs font-medium uppercase tracking-widest !text-white transition hover:bg-[#383838]"
         >
           Explore Collection
         </Link>

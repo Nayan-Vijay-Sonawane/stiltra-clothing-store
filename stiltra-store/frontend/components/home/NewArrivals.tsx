@@ -129,7 +129,7 @@ export default function NewArrivals() {
 
           <Link
             href="/category/new-arrivals"
-            className="inline-flex border border-[#111111] px-8 py-4 text-xs font-semibold tracking-widest transition-colors hover:bg-[#111111] hover:text-white"
+            className="inline-flex border border-[#111111] px-8 py-4 text-xs font-semibold tracking-widest transition-colors hover:bg-[#111111] hover:!text-white"
           >
             VIEW ALL PRODUCTS
           </Link>

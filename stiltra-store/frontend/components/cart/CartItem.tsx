@@ -57,7 +57,7 @@ export default function CartItem({
                     <div className='flex justify-between gap-3'>
 
                         <div>
-                            <h3 className='text-sm font-medium bg-[#171717] sm:text-base'>
+                            <h3 className='text-sm font-medium text-[#171717] sm:text-base'>
                                 {item.name}
                             </h3>
 
@@ -97,7 +97,7 @@ export default function CartItem({
                                 )
                             }
 
-                            className='px-3 py-2 text-sm disabled:opacity-30'
+                            className='px-3 py-2 text-sm '
                         >
                             -
                         </button>

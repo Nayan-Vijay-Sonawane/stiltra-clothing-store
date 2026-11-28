@@ -78,10 +78,10 @@ export default function Navbar() {
 
                     <Link
                         href='/cart'
-                        aria-label='Shopping bag'
-                        className='transition-colors hover:text-[var(--color-accent)]'
+                        aria-label='Open Shopping bag'
+                        className='relative transition-colors hover:text-[var(--color-accent)]'
                     >
-                        <ShoppingBag size={20} strokeWidth={1.6} />
+                        <ShoppingBag size={21} strokeWidth={1.5} />
                     </Link>
 
                 </div>
