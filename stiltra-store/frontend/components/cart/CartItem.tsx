@@ -65,14 +65,87 @@ export default function CartItem({
                                 Colour: {item.color}
                             </p>
 
+                            <p className='mt-1 text-xs text-gray-500'>
+                                Size: {item.size}
+                            </p>
+
                         </div>
 
+                        <p className='whitespace-nowrap text-sm font-medium'>
+                            {formatPrice(item.price * item.quantity)}
+                        </p>
+
                     </div>
+                </div>
+
+                <div className='mt-5 flex flex-wrap items-center justify-between gap-4'>
+
+                    {/* Quantity Controls */}
+
+                    <div className='flex items-center border border-[#DEDBD5]'>
+
+                        <button 
+                            type="button"
+                            aria-label='Decrease quantity'
+                            disabled={item.quantity <= 1}
+                            onClick={() => 
+                                onQuantityChange(
+                                    item.productId,
+                                    item.size,
+                                    item.color,
+                                    item.quantity - 1
+                                )
+                            }
+
+                            className='px-3 py-2 text-sm disabled:opacity-30'
+                        >
+                            -
+                        </button>
+
+                        <span className='min-w-8 text-center text-sm'>
+                            {item.quantity}
+                        </span>
+
+                        <button 
+                            type="button"
+                            aria-label="Increase quantity"
+                            onClick={() => 
+                                onQuantityChange(
+                                    item.productId,
+                                    item.size,
+                                    item.color,
+                                    item.quantity + 1
+                                )
+                            }
+                            className='px-3 py-2 text-sm'
+                        >
+                            +
+                        </button>
+
+                    </div>
+
+                    {/* Remove Product */}
+
+                    <button 
+                        type="button"
+                        onClick={() => 
+                            onRemove(
+                                item.productId,
+                                item.size,
+                                item.color
+                            )
+                        }
+
+                        className='text-xs text-gray-500 underline underline-offset-4 hover:text-black'
+                    >
+                        Remove
+                    </button>
+
                 </div>
 
             </div>
 
         </div>
 
-    )
+    );
 }
